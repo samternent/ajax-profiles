@@ -47,7 +47,11 @@ const buildCard = ({ duration, url, length, data }) => {
   title.className = 'st-resp-title'
   lengthView.className = 'st-resp-length'
 
-  title.innerText = url;
+  if (url.split(window.location.origin).length === 1)
+    title.innerText = url.split('?')[0]
+  else
+    title.innerText = url.split(window.location.origin)[1].split('?')[0];
+
   lengthView.innerText = `${length.toFixed(2)}kb loaded in ${duration.toFixed(2)}ms`;
 
   card.appendChild(title)
@@ -69,9 +73,9 @@ document.body.appendChild(wrapper)
 hijax(start, end);
 //
 //
-// $.get('https://jsonplaceholder.typicode.com/posts/1')
-// $.get('https://jsonplaceholder.typicode.com/posts/2')
-// $.get('https://jsonplaceholder.typicode.com/posts/3')
-// $.get('https://jsonplaceholder.typicode.com/posts/4')
-// $.get('https://jsonplaceholder.typicode.com/posts/5')
-// $.get('https://jsonplaceholder.typicode.com/posts/6')
+$.get('https://jsonplaceholder.typicode.com/posts/1')
+$.get('https://jsonplaceholder.typicode.com/posts/2')
+$.get('https://jsonplaceholder.typicode.com/posts/3')
+$.get('https://jsonplaceholder.typicode.com/posts/4')
+$.get('https://jsonplaceholder.typicode.com/posts/5')
+$.get('https://jsonplaceholder.typicode.com/posts/6')
