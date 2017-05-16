@@ -2,7 +2,6 @@ export default (start, end) => {
   const proxied = window.XMLHttpRequest.prototype.send;
 
   window.XMLHttpRequest.prototype.send = function () {
-      console.log('send')
       const pointer = this;
       const id = 'id' + (new Date()).getTime();
       //

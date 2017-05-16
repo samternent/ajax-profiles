@@ -67,11 +67,11 @@ wrapper.appendChild(top)
 document.body.appendChild(wrapper)
 
 hijax(start, end);
-
-
-$.get('https://jsonplaceholder.typicode.com/posts/1')
-$.get('https://jsonplaceholder.typicode.com/posts/2')
-$.get('https://jsonplaceholder.typicode.com/posts/3')
-$.get('https://jsonplaceholder.typicode.com/posts/4')
-$.get('https://jsonplaceholder.typicode.com/posts/5')
-$.get('https://jsonplaceholder.typicode.com/posts/6')
+//
+//
+// $.get('https://jsonplaceholder.typicode.com/posts/1')
+// $.get('https://jsonplaceholder.typicode.com/posts/2')
+// $.get('https://jsonplaceholder.typicode.com/posts/3')
+// $.get('https://jsonplaceholder.typicode.com/posts/4')
+// $.get('https://jsonplaceholder.typicode.com/posts/5')
+// $.get('https://jsonplaceholder.typicode.com/posts/6')
